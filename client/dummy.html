@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | EDULEARN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="nav-brand">
+        <span class="brand-badge small-badge">EDULEARN</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">My Learning</a>
+        <a href="#">Profile</a>
+        <button id="logoutBtn" class="logout-button" type="button">Logout</button>
+      </nav>
+    </header>
+
+    <main class="dashboard-shell">
+      <section class="hero-card">
+        <div>
+          <p class="eyebrow">Dashboard</p>
+          <h1>Welcome back, learner!</h1>
+        </div>
+        <div class="welcome-badge">Ready to grow</div>
+      </section>
+
+      <section class="stats-row">
+        <div class="stat-card">
+          <strong>12</strong>
+          <span>Courses enrolled</span>
+        </div>
+        <div class="stat-card">
+          <strong>8</strong>
+          <span>Lessons completed</span>
+        </div>
+        <div class="stat-card">
+          <strong>3</strong>
+          <span>Learning streaks</span>
+        </div>
+      </section>
+
+      <section class="courses-section">
+        <div class="section-heading">
+          <h2>Continue Learning</h2>
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card">
+            <div class="course-image course-one"></div>
+            <div class="course-info">
+              <span class="course-tag">Web Development</span>
+              <h3>Full Stack Web Development</h3>
+              <p>Build advanced front-end and back-end applications using modern tools and workflows.</p>
+              <div class="course-meta">
+                <span>4.9 ★</span>
+                <span>12h 45m</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="course-image course-two"></div>
+            <div class="course-info">
+              <span class="course-tag">Programming</span>
+              <h3>Java Programming</h3>
+              <p>Learn Java fundamentals, object-oriented design, and problem-solving techniques.</p>
+              <div class="course-meta">
+                <span>4.8 ★</span>
+                <span>9h 30m</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <div class="course-image course-three"></div>
+            <div class="course-info">
+              <span class="course-tag">Computer Science</span>
+              <h3>Data Structures & Algorithms</h3>
+              <p>Strengthen your technical interview readiness and write efficient algorithmic solutions.</p>
+              <div class="course-meta">
+                <span>4.9 ★</span>
+                <span>14h 10m</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+  </body>
+</html>

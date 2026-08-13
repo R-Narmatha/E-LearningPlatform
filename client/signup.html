@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up | Educational Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="auth-card">
+        <div class="brand-panel">
+          <div class="brand-badge">EduLearn</div>
+          <h1>Learn new skills and grow your career.</h1>
+          <p>
+            Join thousands of learners and discover courses designed to help you build
+            practical knowledge and confidence.
+          </p>
+
+          <ul class="feature-list">
+            <li>Expert-led courses</li>
+            <li>Flexible learning paths</li>
+            <li>Project-based learning</li>
+          </ul>
+        </div>
+
+        <div class="form-panel">
+          <div class="form-header">
+            <p class="eyebrow">Welcome</p>
+            <h2>Create your account</h2>
+          </div>
+
+          <form id="signupForm" novalidate>
+            <div class="input-group">
+              <label for="fullName">Full Name</label>
+              <input id="fullName" name="fullName" type="text" placeholder="Enter your full name" />
+              <small class="error-message" data-error-for="fullName"></small>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" />
+              <small class="error-message" data-error-for="email"></small>
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Create a password" />
+              <small class="error-message" data-error-for="password"></small>
+            </div>
+
+            <div class="input-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                placeholder="Confirm your password"
+              />
+              <small class="error-message" data-error-for="confirmPassword"></small>
+            </div>
+
+            <button type="submit" class="signup-button">Sign Up</button>
+          </form>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+          <p class="login-link">
+            Already have an account?
+            <a href="login.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/signup.js"></script>
+  </body>
+</html>
