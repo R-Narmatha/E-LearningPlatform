@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Educational Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="auth-card">
+        <div class="brand-panel">
+          <div class="brand-badge">EDULEARN</div>
+          <h1>Welcome back to your learning journey.</h1>
+          <p>
+            Continue building practical skills with courses designed for real-world success.
+          </p>
+
+          <ul class="feature-list">
+            <li>Track your progress</li>
+            <li>Access new lessons</li>
+            <li>Learn at your own pace</li>
+          </ul>
+        </div>
+
+        <div class="form-panel">
+          <div class="form-header">
+            <p class="eyebrow">Login</p>
+            <h2>Sign in to your account</h2>
+          </div>
+
+          <form id="loginForm" novalidate>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="Enter your email" />
+              <small class="error-message" data-error-for="email"></small>
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+              <div class="password-wrapper">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Enter your password"
+                />
+                <button type="button" class="password-toggle" aria-label="Show password">
+                  Show
+                </button>
+              </div>
+              <small class="error-message" data-error-for="password"></small>
+            </div>
+
+            <div class="helper-row">
+              <a href="forgot-password.html" class="helper-link" id="forgotPasswordLink">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="signup-button">Login</button>
+          </form>
+
+          <div id="formMessage" class="form-message" aria-live="polite"></div>
+
+          <p class="login-link">
+            Don’t have an account?
+            <a href="signup.html">Sign Up</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>
